@@ -98,6 +98,23 @@ Example MCP client configuration:
 }
 ```
 
+Example MCP client configuration for Win10:
+
+```json
+{
+  "mcpServers": {
+    "javaDecompiler": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@idachev/mcp-javadc"],
+      "env": {
+        "CLASSPATH": "/path/to/java/classes"
+      }
+    }
+  }
+}
+```
+
 ## MCP Tools
 
 The server provides three main tools:
